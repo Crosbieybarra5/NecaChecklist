@@ -1,0 +1,141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	background-image: linear-gradient(to bottom right, #f7577c, #a42fed);
+}
+header{
+    text-align: center;
+	margin-top: 10px;
+	
+    
+    
+}
+h1{
+margin-bottom: 3%;
+    font-size: 9rem;
+    color: #47a2ed;
+    font-family: 'Press Start 2P', cursive;
+	text-shadow: 1rem 1rem 1rem #ff0000;
+}
+
+img {
+    float: left;
+    width:  250px;
+    height: 250px;
+    object-fit: contain;
+	margin-bottom: 5%;
+	align-items: center;
+	
+	
+	
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 11%;
+	margin-top: -5%;
+	justify-content: space-between;
+	text-align: center;
+	
+	
+}
+.item{
+	padding:10%;
+	
+}
+
+button{
+	font-size: 2.5rem;
+	background-color: #298ce9;
+	
+	
+}
+
+.topbutton{
+	border-radius: 1rem;
+	
+	
+}
+.topbutton:hover{
+	background-color: hotpink;
+}
+button:hover {
+	background-color: white;
+  }
+  nav a:hover{
+	color: white;
+  }
+nav{
+	font-size: 1.5rem;
+	color: hotpink;
+	margin-bottom: 2%;
+	cursor: pointer;
+  outline: none;
+  color: hotpink;
+  
+  border: none;
+  border-radius: 15px;
+ 
+ 
+}
+
+@media (max-width: 600px){
+nav{
+	font-size: 1.25rem;
+	display: inline-block;
+	
+}
+}
+
+@media(max-width: 800px){
+	h1{
+		font-size: 3rem;
+		line-height: 1.5;
+	
+	}
+}
+
+@media(max-width: 600px){
+	img{
+		margin-left: 20%;
+		margin-bottom: 10%;
+		margin-top: 10%;
+	}
+}
+
+@media(max-width: 600px){
+.link {
+	margin-left: 7rem;
+	
+}
+}
+
+@media(max-width: 800px){
+
+}

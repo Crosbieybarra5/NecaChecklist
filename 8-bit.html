@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Neca Checklist</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <audio id="audioplayer">
+        </audio>
+        
+        <script>
+            var lastSong = null;
+            var selection = null;
+            var playlist = ["music/(001.008) Title Screen.mp3", "music/01 - A Nightmare.mp3", "music/01_Title Screen & Intro.mp3", "music/02 - Cabin Fever.mp3", "music/02 Stage Intro.mp3", "music/03 - Missions 1 & 2.mp3", "music/04_Stage 1 - Clamp Enterprises.mp3", "music/05 Stage 2 - Base 1 % Stage 4 - Base 2.mp3", "music/05_Boss Battle.mp3", "music/09 - track 01.mp3"]; 
+            var player = document.getElementById("audioplayer");
+            player.autoplay=true;
+            player.addEventListener("ended", selectRandom); 
+        
+            function selectRandom(){
+                while(selection == lastSong){ 
+                    selection = Math.floor(Math.random() * playlist.length);
+                }
+                lastSong = selection; 
+                player.src = playlist[selection]; 
+            }
+        
+            selectRandom(); 
+            player.play(); 
+        </script>
+        </head>
+<body>
+<header>
+    <h1>8-bit</h1>
+    <div>
+        <nav class="topnav">
+            <button class="topbutton"><a href="index.html" style="text-decoration: none;">Home</a></button>
+        </nav>
+        </div>
+</header>
+
+
+</body>
+</html>
